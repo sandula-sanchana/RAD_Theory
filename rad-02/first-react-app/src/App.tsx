@@ -14,8 +14,10 @@ const App = () => {
     return <Title key={index} name={item.name} age={item.age} />
   })
 
-  const handleClick = () => {
+  const handleClick = (e) => {
+    console.log(e)
    console.log("button clicked")
+   e.target.textContent="clicked"
   }
 
   return (
