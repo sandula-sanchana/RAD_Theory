@@ -16,8 +16,8 @@ const App = () => {
 
   return (
     <>
-      <Title>Hello, World!</Title>
-
+      {/* <Title>Hello, World!</Title> */}
+      <Title children="Hello, World!" />
       {newDataList}
     </>
   )

@@ -7,13 +7,13 @@ export const Title=(props)=>{
    <h1 style={{
      color:'red'
    }} className='title'>
-    hello
+    hello, this is a title component
    </h1>
-   <h3>{name}</h3>
    {name!==""?name:<h1>no name</h1>}
 
-   <h4>{props.children}</h4>
-   <h3>{props.name + " " + props.age}</h3>
+    <h4>{props.children}</h4>
+    <h4>{props.name}</h4>
+    <h4>{props.age}</h4>
   </>
   )
 }
