@@ -14,11 +14,16 @@ const App = () => {
     return <Title key={index} name={item.name} age={item.age} />
   })
 
+  const handleClick = () => {
+   console.log("button clicked")
+  }
+
   return (
     <>
       {/* <Title>Hello, World!</Title> */}
       <Title children="Hello, World!" />
       {newDataList}
+      <button onClick={handleClick}>Click me</button>
     </>
   )
 
