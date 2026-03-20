@@ -1,7 +1,12 @@
 import './App.css'
 import { Title } from './components/Title'
+import { useState } from 'react'
 
 const App = () => {
+
+
+
+  const [count,setCount] = useState(0)
 
   const dataList = [
     { name: "sandula", age: 25 },
@@ -14,10 +19,18 @@ const App = () => {
     return <Title key={index} name={item.name} age={item.age} />
   })
 
-  const handleClick = (e) => {
+  const handleClickforAdd = (e) => {
     console.log(e)
    console.log("button clicked")
    e.target.textContent="clicked"
+   setCount(count+1)
+  }
+    const handleClickforReduce = (e) => {
+    console.log(e)
+   console.log("button clicked")
+   e.target.textContent="clicked"
+   setCount(count-1)
+  
   }
 
   return (
@@ -25,7 +38,9 @@ const App = () => {
       {/* <Title>Hello, World!</Title> */}
       <Title children="Hello, World!" />
       {newDataList}
-      <button onClick={handleClick}>Click me</button>
+      <h1>count: {count}</h1>
+      <button onClick={handleClickforAdd}>Click me to add</button>
+      <button onClick={handleClickforReduce}>Click me to reduce</button>
     </>
   )
 
