@@ -1,5 +1,5 @@
 
-export const Title=()=>{
+export const Title=(props)=>{
     const name:string= "sandula"
 
   return (
@@ -11,6 +11,8 @@ export const Title=()=>{
    </h1>
    <h3>{name}</h3>
    {name!==""?name:<h1>no name</h1>}
+
+   <h4>{props.children}</h4>
   </>
   )
 }

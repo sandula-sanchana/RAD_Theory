@@ -7,7 +7,7 @@ const App=()=>{
 
   return (
     <>
-      <Title />
+      <Title children="Hello, World!" />
     </>
   ) 
 
