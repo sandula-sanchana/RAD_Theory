@@ -4,6 +4,8 @@ import './App.css'
 
 const App=()=>{
 
+  const name:string= "sandula"
+
   return (
   <>
    <h1 style={{
@@ -11,6 +13,8 @@ const App=()=>{
    }}>
     hello
    </h1>
+   <h3>{name}</h3>
+   {name!==""?name:<h1>no name</h1>}
   </>
   )
 
