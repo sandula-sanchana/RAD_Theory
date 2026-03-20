@@ -13,6 +13,7 @@ export const Title=(props)=>{
    {name!==""?name:<h1>no name</h1>}
 
    <h4>{props.children}</h4>
+   <h3>{props.name + " " + props.age}</h3>
   </>
   )
 }
